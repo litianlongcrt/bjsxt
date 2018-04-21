@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+    <link href="css/all.css" type="text/css" rel="stylesheet" />
+    <link href="css/load.css" type="text/css" rel="stylesheet" />
+    <link href="css/reg.css" type="text/css" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="jqueryAll/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="jqueryAll/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="jqueryAll/demo.css">
+	<script type="text/javascript" src="jqueryAll/jquery.min.js"></script>
+	<script type="text/javascript" src="jqueryAll/jquery.easyui.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="all">
+        <div id="logo">	
+        <img class="imgLogo" src="images/logo.jpg" />  
+            <img src="images/QQ图片20151214130216.png" />   
+            <a href="#"><img src="images/by1.jpg" /></a>
+        </div>
+        <div id="daohang">
+            <ol>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="load.html">java学院</a></li>
+                <li><a href="load.html">andriod学院</a></li>
+                <li><a href="load.html">ios学院</a></li>
+                <li><a href="load.html">视频下载</a></li>
+                <li><a href="#">报名流程</a></li>
+                <li><a href="#">就业喜报</a></li>
+                <li><a href="wenti.html">常见问题</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ol>
+        </div>
+		
+        
+        <div id="reg">
+        <div class="reg_title">
+        <div class="easyui-panel" title="注册个人信息" style="width:400px">
+		<div style="padding:10px 60px 20px 60px">
+	    <form id="ff" method="post" action="index.html">
+	    	<table cellpadding="5">
+            	<tr>
+                    <td class="first" colspan="2" align="center">
+                      快速注册
+                    </td>
+               </tr>
+	    		<tr>
+	    			<td>昵&nbsp;&nbsp;&nbsp;&nbsp;称：</td>
+	    			<td><input class="easyui-validatebox textbox" type="text" name="name" data-options="required:true"></input></td>
+	    		</tr>
+  	    		<tr>
+	    			<td>密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+	    			<td><input class="easyui-validatebox textbox" type="password" name="name" data-options="required:true"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>确认密码：</td>
+	    			<td><input class="easyui-validatebox textbox" type="password" name="name" data-options="required:true"></input></td>
+	    		</tr>
+              
+	    		<tr>
+	    			<td>邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</td>
+	    			<td><input class="easyui-validatebox textbox" type="text" name="email" data-options="required:true,validType:'email'"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>手&nbsp;&nbsp;&nbsp;&nbsp;机：</td>
+	    			<td><input class="easyui-validatebox textbox" type="text" name="subject" data-options="required:true,validType:''"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>出生年月：</td>
+	    			<td><input class="easyui-datebox"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>语&nbsp;&nbsp;&nbsp;&nbsp;言：</td>
+	    			<td>
+	    				<select class="easyui-combobox" name="language">
+                        <option value="cn">中文</option>
+                        <option value="cnn">繁体</option>
+                        <option value="el">English</option>
+                        <option value="ca">Catalan</option>
+                        </select>
+	    			</td>
+	    		</tr>
+	    	</table>
+	    </form>
+	    <div style="text-align:center;padding:5px">
+	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">完成</a>
+	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()">重置</a>
+	    </div>
+        
+	    </div>
+       
+	</div>
+    
+    <div class="more">
+         <div id="aa" class="easyui-accordion" style="width:300px;">
+			<div title="温馨提示" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+			
+			<p>个人信息一定要保密，不要告诉别人，防止个人信息被泄露。</p>
+            </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function selectPanel(){
+			$.messager.prompt('Prompt','Please enter the panel title:',function(s){
+				if (s){
+					$('#aa').accordion('select',s);
+				}
+			});
+		}
+		var idx = 1;
+		function addPanel(){
+			$('#aa').accordion('add',{
+				title:'Title'+idx,
+				content:'<div style="padding:10px">Content'+idx+'</div>'
+			});
+			idx++;
+		}
+		function removePanel(){
+			var pp = $('#aa').accordion('getSelected');
+			if (pp){
+				var index = $('#aa').accordion('getPanelIndex',pp);
+				$('#aa').accordion('remove',index);
+			}
+		}
+	</script>
+	<style scoped="scoped">
+		.textbox{
+			height:20px;
+			margin:0;
+			padding:0 2px;
+			box-sizing:content-box;
+		}
+	</style>
+	<script>
+		function submitForm(){
+			$('#ff').form('submit');
+		}
+		function clearForm(){
+			$('#ff').form('clear');
+		}
+		
+	</script>
+
+            </div>
+            
+        
+
+            	
+            </div>
+        </div>
+        
+        
+        <div id="banquan">
+        <div class="a_banquan">
+           <a href="#">关于学院</a>
+           <span>|</span>
+           <a href="#">联系我们</a>
+           <span>|</span>
+           <a href="#">招贤纳士</a>
+           <span>|</span>
+           <a href="#">商务合作</a>
+           <span>|</span>
+           <a href="#">常见问题</a>
+           <span>|</span>
+           <a href="#">学员作品</a>
+           <span>|</span>
+           <a href="#">专家师资 </a>
+        </div>
+        <div class="line">
+        	<hr />
+        </div>
+        <div class="p_content">
+        	<p >北京总部地址：北京市海淀区西三旗桥东建材城西路85号神州科技园B座三层尚学堂 咨：400-009-1906 010-56233821		</p>
+            <p >北京市昌平区北七家镇东三旗（亚市）汽车交易市场尚学堂二层  Java培训  Android培训  ios培训  hadoop培训
+</p>
+			<p >四川学院地址：成都市高新区锦晖西一街99号布鲁明顿大厦2栋1003室 电话：028-65176856
+</p>
+			<p >长沙学院地址：长沙韶山南路香颂国际大厦1014 咨询电话：0731-83299621/83999726
+</p>
+			<p >Java培训 | Android培训 | ios培训 | hadoop培训  专业IT培训机构
+            </p>
+            <p >Copyright 2007-2014 北京尚学堂科技有限公司   京ICP备06015238号   京公网安备11010802015183
+</p>
+			<p >媒体联系：18610174079 闫老师</p>
+        </div>
+    </div>
+ </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* CSS Document */
+
+/* 一般写法
+a:link {color:#666666;}
+a:visited {color:#666666;}
+a:hover {color:#C00;}
+a:active {color:#666666;}
+a:focus{color:#666666;}
+*/
+
+#xiazai{
+	background:url(../images/back.png) repeat-x 0 0 ;
+	height:74px;
+	width:100%;
+}
+.xzlb .xzlb1{
+	float:left; margin:20px 0px 20px 50px;
+	width:200px;
+}	
+.xzlb .xzlb1 .xzlb1img{
+	float:left;
+}
+.xzlb .xzlb1 .content{
+	float:left;
+	margin:0px 0px 5px 5px;
+}
+.xzlb .xzlb1 .content .content_top{
+	margin:0px 0px 5px 5px;
+}
+.xzlb .xzlb1 .content .content_bottom{
+	margin:0px 0px 5px 5px;
+}
+#jiuye{
+	margin:10px auto;
+	width:1002px;
+}
+
+#newM{
+	margin: 10px auto;
+	width:1002px;
+	height:182px;
+}
+.newTitle{
+	border: solid thin #999;
+	background:url(../images/14.png) repeat-x 0 0;
+	width:1020px;
+	height:38px;
+	line-height:38px;
+}
+.newContent{
+	border: solid thin #999;
+	width:1000px;
+	height:120px;
+	padding:10px;
+	
+	
+}
+.newContent_list{
+	margin:8px;
+	}
+.newContent a{
+	font-size:13px;
+	font-weight:bold;
+}
+.newTitle .left{
+	font-weight:900;
+	margin-left:10px;
+	color:#F60;
+	font-size:16px;
+	float:left;
+}
+.newTitle .right{
+	margin-right:10px;
+	float:right;
+}
+.newContent_list{
+	width:1002px;
+}

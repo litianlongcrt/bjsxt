@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+   		<link href="css/all.css" type="text/css" rel="stylesheet" />
+    	<link href="css/index.css" type="text/css" rel="stylesheet" />
+        <link href="css/wind.css" type="text/css" rel="stylesheet" />
+    
+        <link rel="stylesheet" type="text/css" href="jqueryAll/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="jqueryAll/themes/icon.css">
+        <link rel="stylesheet" type="text/css" href="jqueryAll/demo.css">
+        <script type="text/javascript" src="jqueryAll/jquery.min.js"></script>
+        <script type="text/javascript" src="jqueryAll/jquery.easyui.min.js"></script>
+
+<style>
+
+.logo_login{
+	float:right;
+	margin:20px;
+/*	height:106px;
+	line-height:106px;
+	*/
+}
+</style>
+</head>
+
+<body>
+<div class="all">
+
+	<div id="logo">	
+        
+        <img class="imgLogo" src="images/logo.jpg" />  
+            <img src="images/QQ图片20151214130216.png" />   
+            <a href="#"><img src="images/by1.jpg" /></a>
+       
+        <span class="logo_login">
+       	<a href="javascript:void(0)" 
+            class="easyui-linkbutton" onclick="$('#w').window('open')">登录</a>
+           <a href="#" class="easyui-linkbutton" 
+           onclick="location='register.html'">注册</a>
+
+        <span>
+    </div>
+    <div id="wind">    
+            <div id="w" class="easyui-window" title="快速登陆" 
+                data-options="modal:true,closed:true,iconCls:'icon-save'" 
+                style="width:500px;height:300px;padding:10px;">
+                <form id="ff" method="post" action="login_do.html">
+                	<div class="table">
+                    <table cellpadding="5">
+                    	<tr>
+                            <td class="first" colspan="2" align="center">
+                           快速登录
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>昵&nbsp;&nbsp;&nbsp;&nbsp;称：</td>
+                            <td><input class="easyui-validatebox textbox" 
+                            type="text" name="name" data-options="required:true"></input></td>
+                        </tr>
+                        <tr align="center">
+                            <td>密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+                            <td><input class="easyui-validatebox textbox" 
+                            type="password" name="name" data-options="required:true"></input></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                            <input type="submit" value="登陆" />
+                            <input type="reset" value="重置" />
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                </form>
+         	</div>
+    	</div>
+	<div id="daohang">
+    	<ol>
+        	<li><a href="?">首页</a></li>
+            <li><a href="load.html">java学院</a></li>
+            <li><a href="load.html">andriod学院</a></li>
+            <li><a href="load.html">ios学院</a></li>
+            <li><a href="load.html">视频下载</a></li>
+            <li><a href="#">报名流程</a></li>
+            <li><a href="#">就业喜报</a></li>
+            <li><a href="wenti.html">常见问题</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ol>
+    </div>
+    <div id="lol">
+    	<a href="#"><img src="images/QQ图片20151214132215.png" width="1350"/></a>
+    </div>
+    <div id="newM">
+    	<div class="newTitle">
+        	<div class="left">最新开班信息</div>
+            <div class="right">11月尚学堂学员月薪8500以上，平均月薪10084元</div>
+        </div>
+        <div class="newContent">
+        	<div class="newContent_list">
+            <img src="images/QQ图片20151214125720.png"/>
+            <a href="#">JAVAEE精品就业班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            
+             <img src="images/QQ图片20151214125801.png"/>
+            <a href="#">Android创意开发班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            
+             <img src="images/QQ图片20151214125826.png"/>
+            <a href="#">云计算极限班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            
+             <img src="images/QQ图片20151214125849.png"/>
+            <a href="#">互联网应用架构高薪班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            </div>
+            
+        	<div class="newContent_list">
+            <img src="images/QQ图片20151214125720.png"/>
+            <a href="#">JAVAEE精品就业班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            
+             <img src="images/QQ图片20151214125801.png"/>
+            <a href="#">Android创意开发班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            
+             <img src="images/QQ图片20151214125826.png"/>
+            <a href="#">云计算极限班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            
+             <img src="images/QQ图片20151214125849.png"/>
+            <a href="#">互联网应用架构高薪班</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            </div>
+			        	<div class="newContent_list">
+            <img src="images/QQ图片20151214125720.png"/>
+            <a href="#">Web前端就业班&nbsp;&nbsp;&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            
+             <img src="images/QQ图片20151214125801.png"/>
+            <a href="#">iOS创意开发班&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            
+             <img src="images/QQ图片20151214125826.png"/>
+            <a href="#">云计算周末班&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            
+             <img src="images/QQ图片20151214125849.png"/>
+            <a href="#">大数据线上班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214125948.png" />
+            </div>
+			        	<div class="newContent_list">
+            <img src="images/QQ图片20151214125720.png"/>
+            <a href="#">Web前端就业班&nbsp;&nbsp;&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            
+             <img src="images/QQ图片20151214125801.png"/>
+            <a href="#">iOS创意开发班&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            
+             <img src="images/QQ图片20151214125826.png"/>
+            <a href="#">网络直播课&nbsp;&nbsp;&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            
+             <img src="images/QQ图片20151214125849.png"/>
+            <a href="#">大数据线上班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <span>12-11</span>
+            <img src="images/QQ图片20151214130019.png" />
+            </div>
+
+        </div>
+    </div>
+    <div id="xiazai">
+    	<div class="xzlb">
+            <div class="xzlb1">
+                <div  class="xzlb1img"><img  src="images/QQ图片20151208192305.png"/>
+                </div>
+                <div class="content">
+                	<div class="content_top">java培训视频</div>
+                    <div class="content_bottom">
+                    	<a href="load.html"><img src="images/QQ图片20151214004614.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="xzlb1">
+                <div  class="xzlb1img"><img src="images/QQ图片20151208192337.png"/>
+                </div>
+                <div class="content">
+                	<div class="content_top">andriod培训视频</div>
+                    <div class="content_bottom">
+                    	<a href="load.html"><img src="images/QQ图片20151214004614.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="xzlb1">
+                <div  class="xzlb1img"><img src="images/QQ图片20151208192405.png"/>
+                </div>
+                <div class="content">
+                	<div class="content_top">ios培训视频</div>
+                    <div class="content_bottom">
+                    	<a href="load.html"><img src="images/QQ图片20151214004614.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="xzlb1">
+                <div  class="xzlb1img"><img src="images/QQ图片20151214002741.png"/>
+               	</div>
+                <div class="content">
+                	<div class="content_top">java300集视频</div>
+                    <div class="content_bottom">
+                    	<a href="load.html"><img src="images/QQ图片20151214004614.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="xzlb1">
+                <div  class="xzlb1img"><img src="images/QQ图片20151208192442.png"/>
+                </div>
+                <div class="content">
+                	<div class="content_top">数据库</div>
+                    <div class="content_bottom">
+                    	<a href="load.html"><img src="images/QQ图片20151214004614.png"/></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div id="jiuye">
+    	<img src="images/QQ图片20151214181139.png" />
+    </div>
+    <div id="banquan">
+        <div class="a_banquan">
+           <a href="#">关于学院</a>
+           <span>|</span>
+           <a href="#">联系我们</a>
+           <span>|</span>
+           <a href="#">招贤纳士</a>
+           <span>|</span>
+           <a href="#">商务合作</a>
+           <span>|</span>
+           <a href="#">常见问题</a>
+           <span>|</span>
+           <a href="#">学员作品</a>
+           <span>|</span>
+           <a href="#">专家师资 </a>
+        </div>
+        <div class="line">
+        	<hr />
+        </div>
+        <div class="p_content">
+        	<p >北京总部地址：北京市海淀区西三旗桥东建材城西路85号神州科技园B座三层尚学堂 咨：400-009-1906 010-56233821		</p>
+            <p >北京市昌平区北七家镇东三旗（亚市）汽车交易市场尚学堂二层  Java培训  Android培训  ios培训  hadoop培训
+</p>
+			<p >四川学院地址：成都市高新区锦晖西一街99号布鲁明顿大厦2栋1003室 电话：028-65176856
+</p>
+			<p >长沙学院地址：长沙韶山南路香颂国际大厦1014 咨询电话：0731-83299621/83999726
+</p>
+			<p >Java培训 | Android培训 | ios培训 | hadoop培训  专业IT培训机构
+            </p>
+            <p >Copyright 2007-2014 北京尚学堂科技有限公司   京ICP备06015238号   京公网安备11010802015183
+</p>
+			<p >媒体联系：18610174079 闫老师</p>
+        </div>
+    </div>
+ </div>
+</body>
+</html>

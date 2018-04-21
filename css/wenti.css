@@ -1,0 +1,27 @@
+/* CSS Document */
+
+#list_con{
+	
+	width:900px;
+	height:530px;
+	margin:10px auto;
+	
+}
+.list_con_title{
+	height:38px;
+	line-height:38px;
+	background:url(../images/44.png) repeat-x 0 0;
+	font-size:18px;
+	color:#F36;
+	font-weight:bold;
+	padding-left:20px;
+}
+#list_con p{
+	line-height:30px;
+	font-size:14px;
+	color:#F09;
+	font-weight:bold;
+}
+.all{
+	background:#6FF;
+}

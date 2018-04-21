@@ -1,0 +1,12 @@
+/* CSS Document */
+.all{
+	background:#3FF;
+}
+#login{
+	width:500px;
+	margin:10px auto;
+
+}
+#login tr{
+	line-height:40px;
+}

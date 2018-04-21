@@ -1,0 +1,40 @@
+/* CSS Document */
+.all{
+	background:#9FC;
+}
+#reg{
+	
+	width:800px;
+	margin:0px auto;
+	overflow:hidden;
+	
+}
+#reg .reg_title{
+	
+	line-height:40px;
+	width:400px;
+	margin:10px auto;
+	float:left;
+}
+#reg .reg_title h1{
+	text-align:center;
+	color:#F36;
+}
+#reg .more{
+	
+	width:300px;
+	margin:10px auto;
+	float:right;
+}
+.more p{
+	text-indent:2em;
+	line-height:30px;
+}
+.more{
+	position:absolute; top:190px; left:800px;
+}
+.first{
+	font-size:24px;
+	color:#C30;
+	font-weight:bold;
+}

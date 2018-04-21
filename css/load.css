@@ -1,0 +1,54 @@
+/* CSS Document */
+
+#load_list{
+	background:#FFF;
+}
+#load_list .load_img{
+	width:721px;
+	margin:10px auto;
+}
+.lists{
+	width:721px;
+	margin:0px auto;
+	border:solid thin #CCC;
+}
+.lists .lists_title{
+	background:url(../images/14.png) repeat-x 0 0;
+	width:721px;
+	height:40px;
+	margin:0px auto;
+	font-size:12px;
+}
+.lists .lists_title span{
+	font-size:14px;
+	font-weight:bold;
+	height:40px;
+	line-height:40px;
+	margin-left:10px;
+}
+.lists .lists_content {
+	padding:10px;
+}
+.lists_content .list_img{
+	float:left;
+	margin:0px 10px;
+}
+.lists_content .list_message .p .p1{
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+}
+.lists_content .list_message .p .p2{
+	float:right;
+}
+.list_message p{
+	line-height:25px;
+	font-size:12px;
+	
+}
+.lists_content .list_hr{
+	border: thin dashed #CCCCCC;
+	width:600px;
+	margin:10px auto;
+	margin-bottom:10px;
+}
